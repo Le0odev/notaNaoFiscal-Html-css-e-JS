@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            header{
+                background-color: #288f08;
+                text-align: center;
+                color: white;
+                padding: 20px 0;
+
+            }
+            .listac{
+                display: flex;
+                margin: 20px 0;
+                padding: 0 20px;
+            }
+
+            .listac input[type=text]{
+                flex: 1;
+                height: 40px;
+                padding-left: 10px;
+            }
+            .lista-produto-single{
+                padding: 10px 0;
+                margin:20px 0;
+                border-bottom: 1px solid #ccc;
+                display: flex;
+            }
+            .lista-produto-single h2{
+                flex:1;
+                padding: 0 20px;
+            }
+           
+            h2.price-produto{
+                text-align: right;
+                font-size: 17px;
+            }
+
+            h2.price-produto > span{
+                background-color:#5a71bb ;
+                padding: 8px 10px;
+                border-radius: 20px;
+                color: white;
+            }
+
+            .soma-produto{
+                margin: 20px;
+            }
+
+            button{
+                margin: 20px;
+                margin-top: 10px ;
+                background-color: #288f08;
+                color: white;
+                border-radius: 10px;
+                padding: 15px 30px;
+                border: solid 1px;
+                font-size: 16px;                
+                
+                
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h2>Emporio Verde Graos</h2>
+            
+        </header>
+        <div class="listac">
+            <input type="text" placeholder="Nome do produto"
+            name="nome_produto">
+            <input type="number" name="price" step="0.01">
+            <input type="submit" name="ação" value="cadastrar">
+
+
+        </div>
+
+        <div class="lista-produto">
+            
+            
+            
+        </div>
+
+        <div class="soma-produto">
+            <h1>Total: 0.00</h1>
+        </div>
+
+        <button name="limpar">Limpar</button>
+
+
+        <script src="supermercado.js">
+         
+        </script>
+    </body>
+</html>
